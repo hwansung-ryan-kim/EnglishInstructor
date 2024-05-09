@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h2>Input your paragraph:</h2>
+            <textarea id="paragraphInput" rows="10"></textarea>
+            <button onclick="analyzeText()">Analyze</button>
+            <button onclick="speakText()">Speak Text</button>  </div>
+        <div class="analysis-section">
+            <div class="titles">
+                <h3>Suggested Titles:</h3>
+                <ul id="titleList"></ul>
+            </div>
+            <div class="keywords">
+                <h3>Important Keywords:</h3>
+                <ul id="keywordList"></ul>
+            </div>
+            <div class="synonyms-antonyms">
+                <h3>Synonyms & Antonyms:</h3>
+                <ul id="synonymList"></ul>
+            </div>
+        </div>
+        <div class="summary-section">
+            <h2>Summary:</h2>
+            <p id="summary"></p>
+        </div>
+        <div class="video-section">  <h2>Text-to-Video:</h2>
+            <p>This functionality is under development.</p>
+        </div>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li>About</li>
+            <li>Help</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
